@@ -1,0 +1,8 @@
+{ 
+  "homepage" : "http://www.google.com", 
+  "homepage_is_newtabpage" : true, 
+  "browser" : { 
+    "show_home_button" : true,
+    "check_default_browser" : false
+  }
+}
