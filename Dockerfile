@@ -21,6 +21,8 @@ RUN yum install -y xauth
 RUN yum install -y libexif
 RUN yum install -y google-chrome-stable
 
+RUN yum install -y mesa-dri-drivers
+
 RUN useradd -u 1000 chrome -p '*'
 
 #
