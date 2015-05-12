@@ -30,11 +30,12 @@ RUN useradd -u 1000 chrome -p '*'
 RUN mkdir /home/chrome/.ssh
 ADD id_rsa.pub /home/chrome/.ssh/authorized_keys
 RUN chown -R chrome:chrome /home/chrome/.ssh
+RUN chmod 600 /home/chrome/.ssh/authorized_keys
 RUN /usr/sbin/sshd-keygen
 RUN echo "X11Forwarding yes" >> /etc/ssh/sshd_config
 RUN mkdir -p /home/chrome/.config/google-chrome 
 RUN touch /home/chrome/.config/google-chrome/First\ Run
 RUN chown -R chrome /home/chrome/
-ENTRYPOINT ["/usr/sbin/sshd","-D"]
 
+ENTRYPOINT ["/usr/sbin/sshd","-D","-e"]
 EXPOSE 22
