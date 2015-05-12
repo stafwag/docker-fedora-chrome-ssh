@@ -5,7 +5,7 @@
 1/ Clone the git repo
 
 ```
-$ git clone git@github.com:stafwag/docker-fedora-chrome-ssh.git
+$ git clone https://github.com/stafwag/docker-fedora-chrome-ssh.git
 ```
 
 2/ Copy your public ssh to id_rsa.pub
