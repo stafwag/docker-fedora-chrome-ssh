@@ -1,5 +1,9 @@
 ##Run google chrome inside a fedora docker container over ssh
 
+*Note: Running google-chrome inside a docker container isn't stable for me.*
+
+*I switched back to LXC to run google-chrome which seems to be more stable.*
+
 ###Installation instructions
 
 1/ Clone the git repo
